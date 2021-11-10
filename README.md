@@ -1,10 +1,5 @@
 # Installation
-### Github pages installation instructions
-Use the remote-theme plugin as described [here.](https://github.com/benbalter/jekyll-remote-theme)
-
-```
-remote_theme: zacharesmer/portfolio-theme
-```
+Clone this repository and add your own content. `jekyll-remote-theme` does not pull all of the files that are necessary, and github pages can't use gems that aren't whitelisted. You can also just take the parts that you like, with attribution.
 
 # Usage
 
