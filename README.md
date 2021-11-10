@@ -1,8 +1,4 @@
-# portofilio
-
-
-
-## Installation
+# Installation
 ### Gem installation instructions
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -69,17 +65,17 @@ Each page in the nav bar is a markdown or html file in the `main-pages` director
 
 Similarly, those are the places to edit if you want to change the name of a page or its link in the nav bar.
 
-## Contributing
+# Contributing
 
 Pull requests and forks are welcome on [this theme's github page.](https://github.com/zacharesmer/portfolio-theme)
 
-## Development
+# Development
 
 To set up your environment to develop this theme, run `bundle install`.
 
 The theme is setup just like a normal Jekyll site! To test it, run `bundle exec jekyll serve --livereload` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser.
 
-## License
+# License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
