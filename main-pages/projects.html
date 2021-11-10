@@ -1,0 +1,16 @@
+---
+layout: default
+title: projects
+permalink: /projects/
+---
+<h1>Latest Projects</h1>
+
+<ul>
+  {% assign chron_projects = site.projects | sort:"date" | reverse %}
+  {% for project in chron_projects %}
+    <li>
+      <h2 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
+      {{ project.description }}
+    </li>
+  {% endfor %}
+</ul>

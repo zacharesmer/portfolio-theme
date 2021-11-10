@@ -1,0 +1,71 @@
+---
+layout: default
+title: CV
+permalink: /CV/
+
+my-name: Zach Resmer
+github: zacharesmer
+email: email@zacharesmer.com
+---
+<h1>{{ page.my-name }}</h1>
+<address>
+  <div>github: <a href="https://github.com/{{ page.github }}">{{ page.github }}</a></div>
+  <div>email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></span>
+</address>
+
+<h2 class="cv-section-heading">Professional Experience</h2>
+<ul>
+  {% assign ordered_jobs = site.jobs | sort:"priority" %}
+  {% for job in ordered_jobs %}
+    {% if job.show == true %}
+      <li class="job"> 
+        <h3>{{ job.title }}</h3>
+        <div class="company">{{ job.company }}</div>
+        <div class="date">{{ job.employment-date }}</div>
+        <p class="job-description">{{ job.content | markdownify }}</p>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2 class="cv-section-heading">Education</h2>
+  <ul>
+    {% assign ordered_education = site.education | sort:"priority" %}
+    {% for education in ordered_education %}
+      {% if education.show == true %}
+        <li class="education">
+          <h3>{{ education.institution }}</h3>
+          <div>{{ education.degree }}</div>
+          <div class="date">{{ education.education-date }}</div>
+          <p>{{ education.content | markdownify }}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+<h2 class="cv-section-heading">Skills</h2>
+  <ul>
+    {% assign ordered_skills = site.skills | sort:"priority" %}
+    {% for cat in ordered_skills %}
+      {% if cat.show == true %}
+      <li class="skill-category"> 
+        <h3>{{ cat.title }}</h3>
+        <p>{{ cat.content | markdownify }}</p>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+
+<h2 class="cv-section-heading">Projects</h2>
+  <ul>
+    {% assign ordered_projects = site.projects | sort:"priority" %}
+    {% for project in ordered_projects %}
+      {% if project.show == true %}
+        <li class="project">
+          <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+          {{ project.description }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
