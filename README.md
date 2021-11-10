@@ -1,25 +1,4 @@
 # Installation
-### Gem installation instructions
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "portofilio"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: portofilio
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install portofilio
-
 ### Github pages installation instructions
 Use the remote-theme plugin as described [here.](https://github.com/benbalter/jekyll-remote-theme)
 
