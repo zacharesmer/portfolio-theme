@@ -3,7 +3,7 @@
 Use the remote-theme plugin as described [here.](https://github.com/benbalter/jekyll-remote-theme)
 
 ```
-remote-theme: zacharesmer/portfolio-theme
+remote_theme: zacharesmer/portfolio-theme
 ```
 
 # Usage
